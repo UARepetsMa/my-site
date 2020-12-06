@@ -6,23 +6,151 @@
     <title>Massage Studio Eirene</title>
 </head>
     <body>
-    <header>
-        <nav>
-        <div class="menu">
-            <img src="img/logo3.png" alt="Logo">
-            <a href="#massages">Massages</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#gift-cards">Gift Cards</a>
-            <a href="#about-us">About Us</a>
-            <a href="#contacts">Contacts</a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="img/icons8-facebook.svg" alt="Facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="img/icons8-instagram.svg" alt="Instagram"></a>
-            <a href="https://twitter.com/?lang=uk" target="_blank"><img src="img/icons8-twitter-squared.svg" alt="Twitter"></a>
-        </div>
-        </nav>
-        <h2>Massage Studio</h2>
-        <h1>Eirene</h1>
-        <img src="img/header.jpg" alt="Header">
-    </header>
+        <header>
+            <nav>
+            <div class="menu">
+                <img src="img/logo3.png" alt="Logo">
+                <a href="#massages">Massages</a>
+                <a href="#massages">Pricing</a>
+                <a href="giftcards.html">Gift Cards</a>
+                <a href="#about-us">About Us</a>
+                <a href="#contacts">Contacts</a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/icons8-facebook.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/icons8-instagram.svg" alt="Instagram"></a>
+                <a href="https://twitter.com/?lang=uk" target="_blank"><img src="img/icons8-twitter-squared.svg" alt="Twitter"></a>
+            </div>
+            </nav>
+            <h2>Massage Studio</h2>
+            <h1>Eirene</h1>
+            <img src="img/detail.png" alt="Detail">
+            <!--<img src="img/header.jpg" alt="Header">-->
+            <h4>Relax, take it easy</h4>
+            <div class="buttons">
+                <a href="#gallery">Learn more</a>
+            </div>
+        </header>
+    <main>
+    <h2 id="massages">Massage Treatments & Prices</h2>
+    <img src="img/detail.png" alt="Detail">
+
+    <!-- Maybe can add 4 buttons in this class Order now-->
+    <div class="massage-list">
+        <article class="mass-type">
+        <h3>Essential Massage</h3>
+        <p>Unbrace your muscles with our Swedish massage. It relieves stress and improves blood circulation.</p>
+        <p>30 min | 50 €<br>
+        45 min | 70 €</p>
+        </article>
+
+        <article class="mass-type">
+        <h3>Deep Treatment</h3>
+        <p>A full body massage. It includes a therapeutic scalp massage for total relaxation and the use of essential oils.</p>
+        <p>40 min | 60 €<br>
+        80 min | 100 €
+        </p>
+        </article>
+
+        <article class="mass-type">
+        <h3>Sports Massage</h3>
+        <p>Recommended before or after sports exercising to heal injuries, unbrace muscles and reduce knotted tissues.</p>
+        <p>30 min | 50 €<br>
+        60 min | 80 €
+        </p>
+        </article>
+
+        <article class="mass-type">
+        <h3>Stone Massage</h3>
+        <p>Used to help you relax and ease tense muscles and damaged soft tissues throughout your body.</p>
+        <p>30 min | 40 €<br>
+        45 min | 60 €
+        </p>
+        </article>
+    </div>
+    <!--About us section-->
+    
+        <article class="about-us">
+            <h2 id="about-us">About us</h2>
+            <img src="img/detail.png" alt="Detail">
+            <h4>Licensed massage studio since 2015</h4>
+            <p>Eirene has been a professional massage studio since 2015!<br>
+            We specialize in classic Swedish massage for adults, sports and stone massage treatment.</p>
+            <p>Each session starts off with a conversation to learn about<br> your goals and reasons for seeking massage treatment.<br>
+            From there, your therapist will offer you the best options and procedures, customized for you.</p>
+            <img src="img/about.jpg" alt="About us">
+        </article>
+    
+    <!--Book massage section-->
+    
+        <article class="book">
+            <h2>Book a massage right now!</h2>
+            <img src="img/detail.png" alt="Detail">
+            <p>Leave your phone number and our specialist will contact you soon to schedule you at a suitable time.</p>
+            <form>
+                <input type="text" name="user-name" placeholder="Name">
+                <br>
+                <input type="tel" name="user-phone" placeholder="Phone number*" required>
+                <br>
+                <div class="buttons">
+                    <input type="submit">
+                </div>
+            </form>
+            <img src="img/order.jpg" alt="Order">
+        </article>
+
+    <!--Gallery section-->
+        
+        <article class="gallery">
+            <h2 id="gallery">Our Gallery</h2>
+            <img src="img/detail.png" alt="Detail">
+            <p>Take care of your body in a pleasant, relaxing atmosphere</p>
+            <!--Need to add 5 pictures and scroller-->
+        </article>
+
+    <!--Massage is gift section-->
+        
+        <article class="gift">
+            <h2>Massage is a great gift!</h2>
+            <img src="img/detail.png" alt="Detail">
+            <p>Order a certificate for Deep Treatment or Essential Massage in our studio.</p>
+                <div class="buttons">
+                    <a href="giftcards.html">Choose certificate</a>
+                </div>
+            <img src="img/gift.jfif" alt="Gift">
+        </article>
+
+    <!--Book massage section-->
+        
+     </main>
+    <!--Footer -->
+        <footer>
+            <h2>Schedule a massage session now!</h2>
+            <img src="img/detail.png" alt="Detail">
+            <form>
+                <input type="text" name="user-name" placeholder="Name*" required>
+                <br>
+                <input type="tel" name="user-phone" placeholder="Phone number*" required>
+                <br>
+                <input type="email" name="user-email" placeholder="Email*" required>
+                <br>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <br>
+                <div class="buttons">
+                    <button>Send</button>
+                </div>
+            </form>
+            <div class="footer" id="contacts">
+                <img src="img/logo3.png" alt="Logo">
+                <div class="call">
+                    <h3>Call Us</h3>
+                    <p>+4 (400) 111 00 00</p>
+                </div>
+                
+                <div class="call">
+                    <h3>Address</h3>
+                    <p>Trafalgar sq.6,London</p>
+                </div>
+                <p>Created by All rights Reserved</p>
+            </div>
+        </footer>
     </body>
 </html>
