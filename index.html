@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     </head>
     <body>
         <header class="home-head">
@@ -143,13 +144,41 @@
                     <img class="small-decor" src="img/detail.png" alt="Decor image">
                     <p>Take care of your body in a pleasant, relaxing atmosphere</p>
                 </div>
-                <div class="gallery-pictures">
-                    <img src="img/gal1.jpg" alt="A woman is having an essential massage on her head">
-                    <img src="img/gal2.jpg" alt="A man is having a deep treatment massage">
-                    <img src="img/gal3.jpeg" alt="A woman is having a stone massage on her back">
-                    <img src="img/gal4.jpg" alt="A pregnant woman is having an essential massage on her sholders">
-                    <img src="img/gal5.jpg" alt="A man and a woman are having a deep treatment massage">
+                <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselGallery" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselGallery" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselGallery" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#carouselGallery" data-bs-slide-to="3"></li>
+                        <li data-bs-target="#carouselGallery" data-bs-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/gal1.jpg" class="d-block w-100" alt="A woman is having an essential massage on her head">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/gal2.jpg" class="d-block w-100" alt="A man is having a deep treatment massage">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/gal3.jpeg" class="d-block w-100" alt="A woman is having a stone massage on her back">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/gal4.jpg" class="d-block w-100" alt="A pregnant woman is having an essential massage on her sholders">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/gal5.jpg" class="d-block w-100" alt="A man and a woman are having a deep treatment massage">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselGallery" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselGallery" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
                 </div>
+                
                 <!--Need to add scroller-->
             </section>
             <!--Massage is gift section-->
@@ -201,5 +230,7 @@
                 <p>Created by All rights Reserved</p>
             </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
 </html>

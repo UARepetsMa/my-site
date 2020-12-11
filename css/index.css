@@ -170,10 +170,10 @@ h3 {
     color: #434343;
     text-align: center;
 }
-.gallery-pictures img {
-    width: 200px;
-    height: 200px;
-}
+
+    /*New css*/
+
+    /*End of New css*/
 .order-img:hover {
     transform: scaleX(-1);
 }
