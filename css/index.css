@@ -1,68 +1,136 @@
-section {
+section, article, header, a, div, nav, h1, h2 {
     margin: 0;
-    padding: 5px;
+    padding: 0;
     border: 0;
     vertical-align: baseline;
 }
-h1 {
-    color: white;
+:root {
     font-family: 'Playfair Display',serif;
-    font-weight: bold;
-    font-size: 80px;
+    max-width: 1080px;
+    margin: auto;
+    scroll-behavior: smooth;
 }
-#logo {
+
+.logo-img, .menu, .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+}
+
+.logo-img {
+    width: 15%;
+}
+
+.logo {
     cursor: pointer;
-    max-width: 7%;
-    padding-left: 70px;
+    width: 100%;
+    padding-left: 40px;
 }
+
 .home-head {
-    background-image: url('https://uarepetsma.github.io/my-site/img/header.jpg');
+    background-image: url('../img/header.jpg');
     background-size: cover;
     background-position: center;
-    /* background-blend-mode: darken; */
+    min-height: 600px;    
 }
+
 .under-menu {
     text-align: center;
     line-height: 15px;
 }
+
 .under-menu span{
     font-weight: bold;
     font-size: 50px;
     color: #ef4a24;
+    padding: 15px;
 }
+
 .under-menu p {
     font-size: 25px;
     font-family: "Open Sans",sans-serif;
     font-style: italic;
     color: white;
-    padding-bottom: 20px;
-    margin-top: 10px;
+    padding-bottom: 50px;
 }
+
 .social {
     text-align: right;
-    padding-right: 50px;
+    padding-right: 40px;
 }
+
 .menu {
     text-align: center;
-}.menu a {
+    
+}
+
+.menu a {
     text-decoration: none;
-    color: #ef4a24;
+    color: white;
     font-weight: bold;
     font-size: 20px;
     border: 3px solid transparent;
-    background-color: #fcf5e8;
     font-family: "Open Sans",sans-serif;
 }
+
 .menu a:hover {
     color: #252b51;
 }
+
+h1 {
+    font-family: 'Playfair Display',serif;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    padding: 10px;
+}
+
 h2 {
     font-family: 'Playfair Display',serif;
     color: #252b51;
     font-weight: bold;
     font-size: 50px;
     margin-bottom: 10px;
+    padding: 10px;
 }
+
+.under-menu-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.big-decor {
+    max-width: 60%;
+}
+
+@media (min-width: 700px) {
+
+    header nav {
+        display: flex;
+    }
+
+    header nav .menu {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+    header nav .social {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+  
+} 
+
 .buttons a {
     text-decoration: none;
     color: white;
@@ -76,33 +144,78 @@ h2 {
     border-radius: 40px;
     font-family: "Open Sans",sans-serif;
 }
+
 .buttons a:hover {
     background-color: #252b51;
 }
-.big-decor {
-    max-width: 60%;
-}
+
+.massage-type-section {
+    size: 700px; 
+    padding-top: 70px;
+    padding-bottom: 70px;
+} 
+
 .massage-type-header {
     text-align: center;
 }
+
 h3 {
     font-size: 24px;
     font-weight: 500;
     color: #434343;
     font-family: 'Playfair Display',serif;
+    text-align: center;
 }
+
 .massage-list p {
     font-family: "Open Sans",sans-serif;
     color: #707070;
+    display: block;
+    text-align: center;
 }
+
 .massage-list span {
     color: #ef4a24;
 }
+
 .price {
     font-weight: bold;
 }
+
+.mass-type {
+    border: 1px solid transparent;
+    margin: 10px;
+    padding: 5px;
+}
+
+@media (min-width: 600px) {
+    .massage-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .massage-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 980px) {
+    .massage-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 .about-us-section {
     background-color: #fcf5e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
 }
 .about-us-section span {
     color: #434343;
@@ -112,19 +225,29 @@ h3 {
     color: #707070;
     font-family: "Open Sans",sans-serif;
     font-size: 18px;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
 }
+
+.picture-about-us {
+    width: 50%;
+    display: block;
+    
+}
+
 .picture-about-us img {
-    max-width: 400px;
-    height: auto;
+    width: 100%;
+    display: block;
+    padding-left: 10px;
 }
+
 .small-decor {
     max-width: 130px;
     border: none;
     padding: none;
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
-    }
+}
+
 .buttons button {
     text-decoration: none;
     border: none;
@@ -139,31 +262,51 @@ h3 {
     border-radius: 40px;
     font-family: "Open Sans",sans-serif;
     cursor: pointer;
-    width: 20%;
+    width: auto;
 }
+
 .buttons button:hover {
     background-color: #252b51;
 }
+
+.book {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.book button {
+    width: auto;
+}
+
+.book form {
+    display: flex;
+    flex-direction: column;
+}
+
 .book form input {
     border-radius: 40px;
     padding: 10px;
     margin: 10px 3px;
     border: 1px solid transparent;
     background-color: rgb(218, 214, 214);
-    width: 20%;
     box-sizing: border-box;
 }
+
 .book p {
     font-family: "Open Sans",sans-serif;
     font-style: normal;
     font-size: 18px;
     color: #434343;
 }
-/* need to find other display options for images */
+
 .gallery-section {
     background-color: #fcf5e8;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     font-family: "Open Sans",sans-serif;
     font-style: normal;
     font-size: 18px;
@@ -171,9 +314,17 @@ h3 {
     text-align: center;
 }
 
-    /*New css*/
+#carouselGallery {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
-    /*End of New css*/
+.order-img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
 .order-img:hover {
     transform: scaleX(-1);
 }
@@ -183,29 +334,53 @@ h3 {
     font-style: normal;
     font-size: 18px;
     color: #434343;
-    padding-left: 30px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
+
 .gift-section p {
     padding-bottom: 30px;
 }
+
+.gift-section-img {
+    width: 50%;
+}
+
 .gift-image {
-    max-width: 500px;
+    width: 100%;
+    display: block;
 }
-.schedule-massage {
+
+.schedule-massage-section {
     background-color: #fcf5e8;
-    padding-bottom: 30px;
-    padding-top: 10px;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-.schedule-massage form input {
+
+.schedule-massage-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-massage-section form input {
     border-radius: 40px;
     padding: 10px;
     margin: 10px 3px;
     border: 1px solid transparent;
     background-color: white;
-    width: 20%;
+    width: auto;
     box-sizing: border-box;
 }
-.schedule-massage form textarea {
+
+.schedule-massage-section form textarea {
     border-radius: 30px;
     padding-bottom: 30px;
     padding-top: 10px;
@@ -213,10 +388,26 @@ h3 {
     margin: 10px 3px;
     border: 1px solid transparent;
     background-color: white;
-    width: 20%;
+    width: auto;
     box-sizing: border-box;
 }
+
 ::placeholder {
     color: #553316;
     font-family: "Open Sans",sans-serif;
+}
+
+@media (min-width: 700px) {
+      
+    .gift-section, .about-us-section, .book, .schedule-massage-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

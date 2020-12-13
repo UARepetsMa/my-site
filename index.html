@@ -5,18 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Massage Studio Eirene</title>
         <link rel="stylesheet" href="css/index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     </head>
     <body>
         <header class="home-head">
             <nav>
-                <div>
+                <div class="logo-img">
                     <a href="index.html">
-                        <img src="img/logo3.png" alt="Logo" id="logo">
+                        <img src="img/logo3.png" alt="Logo" class="logo">
                     </a>
                 </div>
                 <div class="menu">
@@ -39,11 +39,13 @@
                 </div>
             </nav>
             <div class="under-menu">
-                <span class="studio-type">Massage Studio</span>
-                <h1>Eirene</h1>
-                <img class="big-decor" src="img/detail.png" alt="Decor image">
-                <!--<img src="img/header.jpg" alt="Header">-->
-                <p>Relax, take it easy</p>
+                <div class="under-menu-text">
+                    <span>Massage Studio</span>
+                    <h1>Eirene</h1>
+                    <img class="big-decor" src="img/detail.png" alt="Decor image">
+                    <!--<img src="img/header.jpg" alt="Header">-->
+                    <p>Relax, take it easy</p>
+                </div>
                 <div class="buttons">
                     <a href="#gallery">Learn more</a>
                 </div>
@@ -51,12 +53,11 @@
         </header>
         <main>
             <!--Massage Treatments & Prices section-->
-            <section>
+            <section class="massage-type-section">
                 <div class="massage-type-header">
                     <h2>Massage Treatments &Prices</h2>
                     <img class="small-decor" src="img/detail.png" alt="Decor image">
                 </div>
-                <!-- Maybe can add 4 buttons in this class Order now-->
                 <div class="massage-list">
                     <article class="mass-type">
                         <h3>Essential Massage</h3>
@@ -98,6 +99,9 @@
             </section>
             <!--About us section-->
             <section class="about-us-section">
+                <div class="picture-about-us">
+                    <img src="img/about.jpg" alt="Collage of studio photos">
+                </div>
                 <div class="text-about-us">
                     <h2 class="about-us">About us</h2>
                     <img class="small-decor" src="img/detail.png" alt="Decor image">
@@ -113,29 +117,31 @@
                         From there, your therapist will offer you<br>the best options and procedures, customized for you.
                     </p>
                 </div>
-                <div class="picture-about-us">
-                    <img src="img/about.jpg" alt="Collage of studio photos">
-                </div>
+                
             </section>
             <!--Book massage section-->
             <section class="book">
-                <h2>Book a massage right now!</h2>
-                <img class="small-decor" src="img/detail.png" alt="Decor image">
-                <p>
-                    Leave your phone number and<br>
-                    our specialist will contact you<br>
-                    soon to schedule you at a<br>suitable time.
-                </p>
-                <form action="https://formspree.io/f/xjvpavgq" method="POST">
-                    <input type="text" name="user-name" placeholder="Name">
-                    <br>
-                    <input type="tel" name="user-phone" placeholder="Phone number*" required>
-                    <br>
-                    <div class="buttons">
-                        <button>Submit</button>
-                    </div>
-                </form>
-                <img class="order-img" src="img/order.jpg" alt="Woman is lying on table with flowers">
+                <div>
+                    <h2>Book a massage right now!</h2>
+                    <img class="small-decor" src="img/detail.png" alt="Decor image">
+                    <p>
+                        Leave your phone number and<br>
+                        our specialist will contact you<br>
+                        soon to schedule you at a<br>suitable time.
+                    </p>
+                    <form action="https://formspree.io/f/xjvpavgq" method="POST">
+                        <input type="text" name="user-name" placeholder="Name">
+                        <br>
+                        <input type="tel" name="user-phone" placeholder="Phone number*" required>
+                        <br>
+                        <div class="buttons">
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <img class="order-img" src="img/order.jpg" alt="Woman is lying on table with flowers">
+                </div>
             </section>
             <!--Gallery section-->
             <section class="gallery-section">
@@ -183,42 +189,51 @@
             </section>
             <!--Massage is gift section-->
             <section class="gift-section">
-                <h2>Massage is a great gift!</h2>
-                <img class="small-decor" src="img/detail.png" alt="Decor image">
-                <p>
-                    Order a certificate for Deep Treatment or<br>Essential Massage in our studio.
-                </p>
-                <div class="buttons">
+                <div class="gift-section-text">
+                    <h2>Massage is a great gift!</h2>
+                    <img class="small-decor" src="img/detail.png" alt="Decor image">
+                    <p>
+                        Order a certificate for Deep Treatment or<br>Essential Massage in our studio.
+                    </p>
+                    <div class="buttons">
                     <a href="giftcards.html">Choose certificate</a>
+                    </div>
                 </div>
                 <br>
-                <div>
+                <div class="gift-section-img">
                     <img class="gift-image" src="img/gift.jfif" alt="Yellow gift box">
                 </div>
             </section>
             <!--Schedule massage section and map-->
-            <section class="schedule-massage">
-                <h2>Schedule a massage session now!</h2>
-                <img class="small-decor" src="img/detail.png" alt="Decor image">
-                <form action="https://formspree.io/f/xjvpavgq" method="POST">
-                    <input type="text" name="user-name" placeholder="Name*" required>
-                    <br>
-                    <input type="tel" name="user-phone" placeholder="Phone number*" required>
-                    <br>
-                    <input type="email" name="user-email" placeholder="Email*" required>
-                    <br>
-                    <textarea name="message" placeholder="Your message" required></textarea>
-                    <br>
-                    <div class="buttons">
-                        <button>Send</button>
-                    </div>
-                </form>
+            <section class="schedule-massage-section">
+                <div>
+                    <h2>Schedule a massage session now!</h2>
+                    <img class="small-decor" src="img/detail.png" alt="Decor image">
+                    <form action="https://formspree.io/f/xjvpavgq" method="POST">
+                        <input type="text" name="user-name" placeholder="Name*" required>
+                        <br>
+                        <input type="tel" name="user-phone" placeholder="Phone number*" required>
+                        <br>
+                        <input type="email" name="user-email" placeholder="Email*" required>
+                        <br>
+                        <textarea name="message" placeholder="Your message" required></textarea>
+                        <br>
+                        <div class="buttons">
+                            <button>Send</button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <p>Google Maps</p>
+                </div>
             </section>
         </main>
         <!--Footer -->
         <footer>
             <div class="footer" id="contacts">
-                <img src="img/logo3.png" alt="Logo" id="logo">
+                <div class="logo-img">
+                   <img src="img/logo3.png" alt="Logo" class="logo">
+                </div>
                 <div class="call">
                     <h3>Call Us</h3>
                     <p>+4 (400) 111 00 00</p>
@@ -227,8 +242,8 @@
                     <h3>Address</h3>
                     <p>Trafalgar sq.6,London</p>
                 </div>
-                <p>Created by All rights Reserved</p>
             </div>
+            <p>Created by All rights Reserved</p>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
