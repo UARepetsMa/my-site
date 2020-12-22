@@ -1,0 +1,39 @@
+.home-head-gifts {
+    background-size: cover;
+    background-position: center; 
+}
+
+#navbar {
+    background-color:#252b51;
+  }
+
+#navbar div a:hover {
+    color: #ef4a24;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    max-width: 1065px;
+}
+/* 
+.sticky + .content {
+    padding-top: 60px;
+} */
+
+.counter-sales {
+    background-color: #fcf5e8;
+    text-align: center;
+    min-height: 400px; 
+}
+.gift-cards-body {
+    background-color:white;
+    align-content: center;
+}
+
+.gift-cards-body span {
+    color: #ef4a24;
+}
+h1 {
+    color: #252b51;
+}

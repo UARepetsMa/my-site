@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Massage Studio Eirene</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Massage Studio Eirene</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/giftcards.css">
+    </head>
 <body>
-    <header>
-            <nav>
+    <header class="home-head-gifts">
+        <nav id="navbar">
+            <div class="logo-img">
+                <a href="index.html">
+                    <img src="img/logo3.png" alt="Logo" class="logo">
+                </a>
+            </div>
             <div class="menu">
-                <img src="img/logo3.png" alt="Logo">
-                <a href="#massages">Massages</a>
-                <a href="#massages">Pricing</a>
+                <a href="#massage-type">Massages</a>
+                <a href="#massage-type">Pricing</a>
                 <a href="giftcards.html">Gift Cards</a>
                 <a href="#about-us">About Us</a>
                 <a href="#contacts">Contacts</a>
-                <a href="https://www.facebook.com/" target="_blank"><img src="img/icons8-facebook.svg" alt="Facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="img/icons8-instagram.svg" alt="Instagram"></a>
-                <a href="https://twitter.com/?lang=uk" target="_blank"><img src="img/icons8-twitter-squared.svg" alt="Twitter"></a>
             </div>
-            </nav>
-            <h1>Our Gift Cards</h1>
-            <img src="img/detail.png" alt="Detail">
-            <p>Order certificate for any type of massage in our studio.</p>
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="img/icons8-facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="img/icons8-instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://twitter.com/?lang=uk" target="_blank">
+                    <img src="img/icons8-twitter-squared.svg" alt="Twitter">
+                </a>
+            </div>
+        </nav>
+    </header>
+        <section class="counter-sales">
+            <h2>New Year Sales!</h2>
+            <p id="counter"></p>
+            <p>20% off Gift Cards</p><br>
+            <div class="buttons">
+                <a href="#gallery">Learn more</a>
+            </div>
+        </section>
+        <section class="gift-cards-body">
+            <div>
+                <h1>Our Gift Cards</h1>
+                <img src="img/detail.png" alt="Detail" class="small-decor">
+                <p>Order certificate for any type of massage in our studio.</p>
+            </div>
+            <div>
+                <p>This classic Swedish massage allows a person to unbrace the<br>
+                muscles. It relieves stress and improves blood circulation. The<br>
+                patient feel better, calm and fresh from the very first session.</p>
+                <p class="price">
+                    30 min | <span>50 €</span>
+                    <br>
+                    45 min | <span>70 €</span>
+                </p>
+            </div>
+            <div>
+                <p>It's a full body massage. It includes a therapeutic scalp<br>
+                     massage for total relaxation and the use of essential oils and<br>
+                     aromatherapy. Perfect gift for every woman or man!</p>
+                <p class="price">
+                40 min | <span>60 €</span>
+                <br>
+                80 min | <span>100 €</span>
+                </p>
+            </div>
+        </section>
+        <script src="js/index.js"></script>
 </body>
 </html>
